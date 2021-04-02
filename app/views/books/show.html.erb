@@ -1,0 +1,18 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col">
+      <div><%= flash[:notice] %></div>
+      <table ="table", class="mb-5 ml-5">
+        <tr>
+          <th>Title:</th>
+          <th><%= @book.title %></th>
+        </tr>
+        <tr>
+          <th>Body:</th>
+          <th><%= @book.body %></th>
+        </tr>
+      </table>
+      <div><%= link_to "edit", edit_book_path(@book) %> | <%= link_to "back", books_path %></div>
+    </div>
+  </div>
+</div>
